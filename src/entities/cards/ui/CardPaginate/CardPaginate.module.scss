@@ -1,0 +1,5 @@
+@import '@/app/styles/mixins/mixins.scss';
+
+.CardPaginate {
+  @include FlexDirection;
+}

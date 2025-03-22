@@ -1,0 +1,55 @@
+@import '@/app/styles/mixins/mixins.scss';
+@import '@/app/styles/variables/palette.scss';
+
+.CardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 18px;
+  width: 330px;
+  height: 400px;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.generalInfo {
+  width: 90%;
+  height: 30%;
+  padding: 15px 0 0 0;
+  color: $mainTextColor;
+  @include FlexDirection(space-between);
+}
+
+.title {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  @include FlexContainer(space-between);
+}
+
+.name {
+}
+
+.price {
+  color: $accentTextColor;
+}
+
+.coordinates {
+  width: 100%;
+  @include FlexContainer(flex-start);
+  gap: 5px;
+}
+
+.options {
+  width: 100%;
+  color: $secondaryTextColor;
+  @include FlexContainer(flex-start);
+  gap: 10px;
+}
+
+.option_item {
+  @include FlexContainer;
+  gap: 5px;
+}

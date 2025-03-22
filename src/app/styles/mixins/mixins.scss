@@ -1,0 +1,20 @@
+@mixin FlexContainer($direction: center) {
+  display: flex;
+  justify-content: $direction;
+  align-items: center;
+}
+
+@mixin FlexDirection($direction: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $direction;
+  align-items: center;
+}
+
+@mixin GridTemplate() {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}

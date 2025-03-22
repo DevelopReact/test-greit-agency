@@ -1,0 +1,11 @@
+@import '@/app/styles/variables/palette.scss';
+
+.Loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $secondaryAccentTextColor;
+  font-size: 20px;
+  font-weight: 700;
+}

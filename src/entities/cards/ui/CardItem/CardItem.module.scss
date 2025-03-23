@@ -39,6 +39,14 @@
   gap: 5px;
 }
 
+.local_icon {
+  flex: 1;
+}
+
+.text_address {
+  flex: 9;
+}
+
 .options {
   width: 100%;
   color: palette.$secondaryTextColor;

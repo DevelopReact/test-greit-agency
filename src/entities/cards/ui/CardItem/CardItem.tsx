@@ -44,10 +44,14 @@ export const CardItem: FC<CardItemProps> = ({ generalInfo, images, _id }) => {
           </div>
         </div>
         <div className={styles.coordinates}>
-          <div className={styles.local}>
+          <div className={styles.local_icon}>
             <LocationPoint />
           </div>
-          {loading ? <>Loading...</> : <span>{address}</span>}
+          {loading ? (
+            <>Loading...</>
+          ) : (
+            <span className={styles.text_address}>{address}</span>
+          )}
           {error ?? <>{error}</>}
         </div>
         <div className={styles.options}>

@@ -44,7 +44,9 @@ export const CardItem: FC<CardItemProps> = ({ generalInfo, images, _id }) => {
           </div>
         </div>
         <div className={styles.coordinates}>
-          <LocationPoint />
+          <div className={styles.local}>
+            <LocationPoint />
+          </div>
           {loading ? <>Loading...</> : <span>{address}</span>}
           {error ?? <>{error}</>}
         </div>

@@ -1,13 +1,13 @@
-@import '@/app/styles/mixins/mixins.scss';
+@use '@/app/styles/mixins/mixins.scss';
 
 .Paginate {
   padding: 30px 0;
-  @include FlexContainer;
+  @include mixins.FlexContainer;
   gap: 20px;
 }
 
 .navigate_pagination {
-  @include FlexContainer;
+  @include mixins.FlexContainer;
   gap: 10px;
 }
 

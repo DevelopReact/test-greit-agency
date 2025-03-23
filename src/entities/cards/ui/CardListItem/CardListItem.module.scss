@@ -1,7 +1,8 @@
-@import '@/app/styles/mixins/mixins.scss';
+@use '@/app/styles/mixins/mixins.scss';
+
 .CardListItem {
   width: 80%;
-  @include GridTemplate;
+  @include mixins.GridTemplate;
 }
 
 @media (max-width: 1450px) {

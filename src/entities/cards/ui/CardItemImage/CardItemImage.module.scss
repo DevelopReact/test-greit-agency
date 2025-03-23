@@ -1,5 +1,5 @@
-@import '@/app/styles/mixins/mixins.scss';
-@import '@/app/styles/variables/palette.scss';
+@use '@/app/styles/mixins/mixins.scss';
+@use '@/app/styles/variables/palette.scss';
 
 .CardItemImage {
   width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .image_header {
-  @include FlexContainer(space-between);
+  @include mixins.FlexContainer(space-between);
   padding: 15px;
   position: relative;
   z-index: 2;
@@ -23,14 +23,14 @@
   top: 0;
   width: 100%;
   height: 100%;
-  @include FlexContainer(space-between);
+  @include mixins.FlexContainer(space-between);
 }
 
 .navigateButton {
   opacity: 0;
   width: 20%;
   height: 100%;
-  @include FlexContainer;
+  @include mixins.FlexContainer;
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
 }
@@ -53,5 +53,5 @@
   height: 40px;
   border-radius: 50%;
   background-color: #ffffff;
-  @include FlexContainer;
+  @include mixins.FlexContainer;
 }

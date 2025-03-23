@@ -1,5 +1,5 @@
-@import '@/app/styles/mixins/mixins.scss';
-@import '@/app/styles/variables/palette.scss';
+@use '@/app/styles/mixins/mixins.scss';
+@use '@/app/styles/variables/palette.scss';
 
 .CardItem {
   display: flex;
@@ -18,38 +18,35 @@
   width: 90%;
   height: 30%;
   padding: 15px 0 0 0;
-  color: $mainTextColor;
-  @include FlexDirection(space-between);
+  color: palette.$mainTextColor;
+  @include mixins.FlexDirection(space-between);
 }
 
 .title {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
-  @include FlexContainer(space-between);
-}
-
-.name {
+  @include mixins.FlexContainer(space-between);
 }
 
 .price {
-  color: $accentTextColor;
+  color: palette.$accentTextColor;
 }
 
 .coordinates {
   width: 100%;
-  @include FlexContainer(flex-start);
+  @include mixins.FlexContainer(flex-start);
   gap: 5px;
 }
 
 .options {
   width: 100%;
-  color: $secondaryTextColor;
-  @include FlexContainer(flex-start);
+  color: palette.$secondaryTextColor;
+  @include mixins.FlexContainer(flex-start);
   gap: 10px;
 }
 
 .option_item {
-  @include FlexContainer;
+  @include mixins.FlexContainer;
   gap: 5px;
 }
